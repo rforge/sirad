@@ -1,0 +1,11 @@
+Package: sirad
+Type: Package
+Title: Functions for calculating daily solar radiation
+Version: 1.0-4
+Date: 2011-10-01
+Author: Jedrzej Bojanowski
+Maintainer: Jedrzej Bojanowski <jedrzej.bojanowski@gmail.com>
+Description: Package provides functions to calculate daily solar radiation at horizontal surface using several well-known models. It also includes functions for model calibration based on groud-truth data as well as a function for auto-calibration.
+Depends: zoo
+License: GPL-2
+LazyLoad: yes
