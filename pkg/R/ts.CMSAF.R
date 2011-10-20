@@ -9,7 +9,7 @@ function(files, latlon) {
       varname.short <- nc$var[[1]]$name #e.g "SIS"
       varname.long <- nc$var[[1]]$longname #e.g "Solar Surface Irradiance, daily mean"
       varunits <- nc$var[[1]]$units
-      missval <- att.get.ncdf(nc,"SIS","_FillValue")$value
+      missval <- att.get.ncdf(nc,varname.short,"_FillValue")$value
       timedim <- nc$dim[["time"]]
       time.unit <- timedim$units
       time <- timedim$vals

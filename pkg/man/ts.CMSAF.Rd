@@ -38,11 +38,7 @@ Jedrzej Bojanowski
 
 }
 \examples{
- ## Not run:
-files <- list.files(path="c:/...",full.names=T)
-plot(ts.CMSAF(files,latlon=matrix(c(55,15,45,15),ncol=2))
- ## End(Not run)
-
+\dontrun{plot(ts.CMSAF(files,latlon))}
 }
 
 \keyword{}
