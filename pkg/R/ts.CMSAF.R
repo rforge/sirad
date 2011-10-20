@@ -10,6 +10,8 @@ function(files, latlon) {
       varname.long <- nc$var[[1]]$longname #e.g "Solar Surface Irradiance, daily mean"
       varunits <- nc$var[[1]]$units
       missval <- att.get.ncdf(nc,varname.short,"_FillValue")$value
+      if (nc$var[[1]]$hasScaleFact) scale.factor <- nc$var[[1]]$scaleFact else scale.factor <- 1
+      if (nc$var[[1]]$hasAddOffset) add.offset <- nc$var[[1]]$addOffset else add.offset <- 0
       timedim <- nc$dim[["time"]]
       time.unit <- timedim$units
       time <- timedim$vals
@@ -23,12 +25,14 @@ function(files, latlon) {
       wh_lon <- which(abs(longitudes - latlon[ll,2])==min(abs(longitudes - latlon[ll,2])))
       } else
       stop("The specified location is outside the image file!") 
-      var.value <- c(var.value,get.var.ncdf(nc, varid=varname.short, start=c(wh_lon,wh_lat,1), count=c(1,1,1)))      
+      val <- get.var.ncdf(nc, varid=varname.short, start=c(wh_lon,wh_lat,1), count=c(1,1,1))
+      val[val == (missval*scale.factor + add.offset)]  <- NA
+      var.value <- c(var.value,val)      
       }
       close.ncdf(nc)
       var.ts <- rbind(var.ts,var.value)
       }
       var.ts[var.ts<0] <- NA
-      var.zoo <- zoo(var.ts[,-1],order.by=as.Date(var.ts[,1],origin="1980-01-01"))
+      var.zoo <- zoo(var.ts[,-1],order.by=as.Date(var.ts[,1]))
       var.zoo                    
       }
