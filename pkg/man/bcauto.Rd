@@ -47,10 +47,10 @@ The auto-calibration method bases on the assumption that on the clear days model
 \item{BCb}{Bristow-Campbell 'B' coefficient}
 }
 \references{
-...to be published
+Bojanowski, J., Donatelli, M., 2011, Auto-calibration of the Bristow and Campbell solar radiation model, Environmental Modelling and Software. [in press]
 }
 \author{
-Bojanowski, J., Donatelli, M., 2011, Auto-calibration of the Bristow and Campbell solar radiation model, Environmental Modelling and Software. [in press] 
+  Jedrzej Bojanowski
 }
 \note{
 
