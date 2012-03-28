@@ -37,7 +37,7 @@ List of 13 statistics:
 \item{EF}{Modelling Efficiency}
 \item{SD}{Standard deviation of differences}
 \item{CRM}{Coefficient of Residual Mass}
-\item{KS}{the Kolmogorov-Smirnov Test test statistic}
+\item{MPE}{Mean Percentage Error}
 }
 \references{
 
