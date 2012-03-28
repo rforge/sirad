@@ -16,7 +16,7 @@ rval$intercept <- coef(m)[1]
 rval$EF <- 1 - (sum((calculated - measured)^2)/sum((measured-mean(measured,na.rm=T))^2))
 rval$SD <- sd(calculated-measured,na.rm=T)
 rval$CRM <- (mean(measured-calculated, na.rm=T))/mean(measured,na.rm=T)
-rval$KS <- as.numeric(ks.test(measured,calculated)$statistic)
+rval$MPE <- mean((calculated-measured)/measured,na.rm=T)*100
 rval
 }
 
