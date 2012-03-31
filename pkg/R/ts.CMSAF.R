@@ -33,6 +33,6 @@ function(files, latlon) {
       var.ts <- rbind(var.ts,var.value)
       }
       var.ts[var.ts<0] <- NA
-      var.zoo <- zoo(var.ts[,-1],order.by=as.Date(var.ts[,1]),origin="1970-01-01"))
+      var.zoo <- zoo(var.ts[,-1],order.by=as.Date(var.ts[,1]),origin="1970-01-01")
       var.zoo                    
       }
