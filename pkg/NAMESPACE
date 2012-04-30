@@ -1,2 +1,2 @@
-export(ap,apcal,radians,degrees,dayOfYear,extrat,bc,bccal,bcauto,ha,hacal,su,sucal,mh,cst,ts.CMSAF,modeval) 
+export(ap,apcal,radians,degrees,dayOfYear,extrat,bc,bccal,bcauto,ha,hacal,hauto,su,sucal,mh,cst,ts.CMSAF,modeval) 
 
