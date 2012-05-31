@@ -9,7 +9,7 @@ rval$MBE <- mean(calculated - measured,na.rm=T)
 rval$MAE <- mean(abs(calculated - measured),na.rm=T)
 rval$RMSE <- sqrt(mean((calculated - measured)^2,na.rm=T))
 rval$RRMSE <- 100*(sqrt(mean((calculated - measured)^2,na.rm=T)))/mean(measured,na.rm=T)
-m <- lm(measured ~ calculated)
+m <- lm(calculated~measured)
 rval$R2 <- summary(m)$r.squared
 rval$slope <- coef(m)[2]
 rval$intercept <- coef(m)[1]  
