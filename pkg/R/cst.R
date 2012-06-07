@@ -23,7 +23,7 @@ function (RefRad, days, lat, extraT=NULL, perce = 3, sepYear = FALSE, stat="medi
         mtalsALL <- sort(tals)[(ll - round(ll * (perce/100))):ll]
 
     }
-    if (stat=="median") rval <- median(mtals)
-    if (stat=="max") rval <- max(mtals)
+    if (stat=="median") rval <- median(mtalsALL)
+    if (stat=="max") rval <- max(mtalsALL)
     rval
 }

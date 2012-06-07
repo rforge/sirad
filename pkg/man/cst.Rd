@@ -22,13 +22,13 @@ Vector of class 'Date' of length n.
 Latitude in radians
 }
   \item{extraT}{
-Optional. Vector of length n of extraterrestrial solar radiation [MJm-2]. If 'NULL' then it is calculated by the function. Providing extraterrestrial solar radiation speeds up the computation. 
+Optional. Vector of length n of extraterrestrial solar radiation [MJm-2]. If 'NULL' then it is calculated by the function. Providing extraterrestrial solar radiation speeds up the computation 
 }
   \item{perce}{
 Percent of days to be chosen as clear days
 }
   \item{sepYear}{
-Logical value. If 'TRUE' percent of days given by 'perce' of every single year are taken for calculation. If 'FALSE' percent of days given by 'perce' of all years are taken for calculation.
+Logical value. If 'TRUE' percent of days given by 'perce' of every single year are taken for calculation. If 'FALSE' percent of days given by 'perce' of all years are taken for calculation
 }
   \item{stat}{
 Method used to derive final value of the clear sky transmissivity from the values derived from selected clear sky days. Default is 'median' which is more conservative, while alternative 'max' is sensitive to outliers. If 'max' is used the value of 'perce' is not important.  
