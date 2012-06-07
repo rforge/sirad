@@ -31,7 +31,7 @@ Percent of days to be chosen as clear days
 Logical value. If 'TRUE' percent of days given by 'perce' of every single year are taken for calculation. If 'FALSE' percent of days given by 'perce' of all years are taken for calculation
 }
   \item{stat}{
-Method used to derive final value of the clear sky transmissivity from the values derived from selected clear sky days. Default is 'median' which is more conservative, while alternative 'max' is sensitive to outliers. If 'max' is used the value of 'perce' is not important.  
+Method used to estimate final value of the clear sky transmissivity from the values derived from selected clear-sky days. Default is 'median' which is more conservative, while alternative 'max' is sensitive to outliers. If 'max' is used the value of 'perce' is not important. If 'stat' is numeric then (instead of 'median' or 'max') 'quantile' is used. 'Stat' is send as quantile's 'probs' parameter. Look ?quantile for details   
 }
 }
 \details{
