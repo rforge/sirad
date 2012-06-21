@@ -21,15 +21,16 @@ function (lat, days, Tmax, Tmin, tal, BCb_guess = 0.13, epsilon = 0.5,
     rv_BC <- bc(days, lat, BCb_guess, Tmax, Tmin, BCc = 2, tal)
     pot <- Sd * tal
     dif <- pot - rv_BC
-    wh <- which(dif < sort(dif)[round(length(dif) * (perce/100))])
+    nwh <- round(length(dif) * (perce/100))
+    if (nwh<4) nwh <- 4
+    wh <- which(dif < sort(dif)[nwh])
     dif <- dif[wh]
     dtemp <- dtemp[wh]
     Sd <- Sd[wh]
     rad_mea <- Sd * tal - epsilon
     m <- nls(rad_mea ~ Sd * tal * (1 - exp((-b * dtemp^2)/dtempM)), 
-        start = list(b = 0.05), trace = F,control = list(maxiter = 500))
+        start = list(b = 0.05), trace = F, control = list(maxiter = 500))
     rval <- c(coef(m))
     names(rval) <- c("BCb_auto")
     rval
 }
-
