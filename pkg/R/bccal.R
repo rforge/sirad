@@ -19,7 +19,6 @@ function (lat, days, rad_mea, Tmax, Tmin, tal)
         start = list(b = 0.05), trace = F,control = list(maxiter = 500))
     rval <- c(coef(m))
     names(rval) <- c("BCb_nls")
-    rval[or] <- rval[or]
     rval
 }
 

@@ -8,12 +8,15 @@ Auto-calibrate Bristow-Campbell model
 Function estimates Bristow-Campbell model coefficient 'B' based on auto-calibration procedure
 }
 \usage{
-bcauto(lat,days,Tmax,Tmin,tal,BCb_guess=0.13,epsilon=0.5,perce=1,dcoast=NA)
+bcauto(lat,lon,days,Tmax,Tmin,tal,BCb_guess=0.13,epsilon=0.5,perce=NA,dcoast=NA)
 }
 
 \arguments{
   \item{lat}{
 Latitude in decimal degrees.
+}
+  \item{lon}{
+Longitude in decimal degrees.
 }
   \item{days}{
 Vector of class 'Date' of length n.
@@ -34,20 +37,20 @@ Assumption of Bristow-Campbell coefficient. Default set to 0.13.
 A value of which potential radiation is decreased. See "details".
 }
   \item{perce}{
-Percent of clear days. Default set to 1.
+Percent of clear days. In 'NA' then perce is estimated based on the Cloud Fraction Cover map.
 }
   \item{dcoast}{
 Distance to the coast [km].
 }
 }
 \details{
-The auto-calibration method bases on the assumption that on the clear-sky days model should not overpredict potential values. It is assumed that at every location at least 1 percent of days is clear which gives resonable 4 days per year. To define those clear-sky days, we estimate daily solar radiation using Bristow and Campbell model with default values of B = 0.13 and tal = 0.72 and we select those days for which estimated daily solar radiation is the closest to the potential values (extra-terrestrial*tal). Next, based on selected clear-sky days, we perform a non-linear least squares regression to derive B coefficient treating potential values decreased by 'epsilon' as a reference solar radiation values. The analysis of auto-calibration results showed clear correlation between optimal 'epsilon' and distance to the coast. We proposed simplified method in which 'epsilon' is equal to 0.1 MJm-2 or to 0.5 MJm-2 when distance to the coast is smaller or bigger than 15 km respectively. 
+The auto-calibration method bases on the assumption that on the clear-sky days model should not overpredict potential values. To define those clear-sky days, we estimate daily solar radiation using Bristow and Campbell model with default values of B = 0.13 and tal = 0.72 and we select those days for which estimated daily solar radiation is the closest to the potential values (extraterrestrial*tal). The number of clear-sky days is estimated based on the mean Cloud Fraction Cover map. Next, based on selected clear-sky days, we perform a non-linear least squares regression to derive B coefficient treating potential values decreased by 'epsilon' as a reference solar radiation values. The analysis of auto-calibration results showed clear correlation between optimal 'epsilon' and distance to the coast. We proposed simplified method in which 'epsilon' is equal to 0.1 MJm-2 or to 0.5 MJm-2 when distance to the coast is smaller or bigger than 15 km respectively. 
 }
 \value{
 \item{BCb}{Bristow-Campbell 'B' coefficient}
 }
 \references{
-Bojanowski, J., Donatelli, M., 2011, Auto-calibration of the Bristow and Campbell solar radiation model, Environmental Modelling and Software. [in press]
+Bojanowski, J., Donatelli, M., 2012, Auto-calibration of the Bristow and Campbell solar radiation model, Environmental Modelling and Software. [in prep.]
 }
 \author{
   Jedrzej Bojanowski
@@ -66,9 +69,10 @@ tmax <- Metdata$meteo$TEMP_MAX
 tmin <- Metdata$meteo$TEMP_MIN
 days <- Metdata$meteo$DAY
 lat <- Metdata$LATITUDE
+lon <- Metdata$LONGITUDE
 rad_mea <- Metdata$meteo$RAD_MEA
 dcoast <- Metdata$DCOAST
-bcauto(lat,days,tmax,tmin,tal=0.76,BCb_guess=0.13,epsilon=0.5,perce=1,dcoast)
+bcauto(lat,lon,days,tmax,tmin,tal=0.76,BCb_guess=0.13,epsilon=0.5,perce=NA,dcoast)
 }
 \keyword{}
 
