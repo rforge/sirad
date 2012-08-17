@@ -9,7 +9,7 @@ This dataset contains two years of daily data of sunshine hours, solar radiation
 }
 \usage{data(Metdata)}
 \format{
-\tabular{lll}{
+\tabular{llll}{
           \tab NAME    \tab chr \tab Name \cr
           \tab LATITUDE    \tab numeric \tab Latitude (decimal degree) \cr
           \tab LONGITUDE    \tab numeric \tab Longitude (decimal degree) \cr
