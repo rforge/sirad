@@ -3,15 +3,16 @@
 \alias{sirad}
 \docType{package}
 \title{
-Functions for calculating daily solar radiation}
+Functions for calculating daily solar radiation and avapotranspiration}
 \description{
-Package provides functions to calculate daily solar radiation at horizontal surface using several well-known models. It also icludes functions for model calibration based on groud-truth data as well as a function for auto-calibration.}
+Package provides functions to calculate daily solar radiation at horizontal surface using several well-known models. It also icludes functions for model calibration based on groud-truth data as well as a function for auto-calibration. The FAO Penmann-Monteith equation to calculate evapotranspiration is also included.
+}
 \details{
 \tabular{ll}{
 Package: \tab sirad\cr
 Type: \tab Package\cr
-Version: \tab 1.0-7\cr
-Date: \tab 2011-10-20\cr
+Version: \tab 2.0-2\cr
+Date: \tab 2012-08-21\cr
 License: \tab GPL-2\cr
 LazyLoad: \tab yes\cr
 }
