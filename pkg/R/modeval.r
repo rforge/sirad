@@ -17,6 +17,9 @@ rval$EF <- 1 - (sum((calculated - measured)^2)/sum((measured-mean(measured,na.rm
 rval$SD <- sd(calculated-measured,na.rm=T)
 rval$CRM <- (mean(measured-calculated, na.rm=T))/mean(measured,na.rm=T)
 rval$MPE <- mean((calculated-measured)/measured,na.rm=T)*100
+SSD <- sum((calculated-measured)^2)
+SPOD <- sum((abs(mean(calculated)-mean(measured))+abs(measured-mean(measured)))*(abs(mean(calculated)-mean(measured))+abs(calculated-mean(calculated))))
+rval$AC <- 1-(SSD/SPOD)
 rval
 }
 
