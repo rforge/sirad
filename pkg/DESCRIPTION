@@ -10,3 +10,4 @@ URL: http://sirad.r-forge.r-project.org/, http://mars.jrc.ec.europa.eu/mars/Proj
 Depends: zoo, ncdf, RNetCDF, raster
 License: GPL-2
 LazyLoad: yes
+LazyData: yes
