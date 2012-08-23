@@ -38,6 +38,7 @@ List of 13 statistics:
 \item{SD}{Standard deviation of differences}
 \item{CRM}{Coefficient of Residual Mass}
 \item{MPE}{Mean Percentage Error}
+\item{AC}{Agreement Coefficient}
 }
 \references{
 
