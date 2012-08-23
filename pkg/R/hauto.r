@@ -3,7 +3,6 @@ function (lat, lon, days, Tmax, Tmin, tal, Ha_guess = 0.16, Hb_guess = 0.1, epsi
     perce = NA) 
 {
     if (is.na(perce)) {
-    data(CFC,verbose=F) 
     p <- extract(CFC, matrix(c(lon,lat),1,2))
     perce <- -35*log(p)+0.54*p+112
     if (perce > 30) perce <- 30
