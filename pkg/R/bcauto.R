@@ -3,6 +3,7 @@ function (lat, lon, days, Tmax, Tmin, tal, BCb_guess = 0.13, epsilon = 0.5,
     perce = NA, dcoast = NA) 
 {
     if (is.na(perce)) { 
+    require(raster)
     p <- extract(CFC, matrix(c(lon,lat),1,2))
     perce <- -68*log(p)+0.92*p+225
     if (perce > 30) perce <- 30
