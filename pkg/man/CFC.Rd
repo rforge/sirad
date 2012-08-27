@@ -25,7 +25,8 @@ clear-sky days at given location.
 if(require(raster))
 {
   data(CFC)
-  str(CFC)
+  # str(CFC)
+  show(CFC)
 }
 }
 \keyword{datasets}
