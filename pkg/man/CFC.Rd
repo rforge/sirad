@@ -8,12 +8,12 @@ Annual mean of cloud fraction cover
 This dataset contains a raster of annual mean of cloud fraction cover
 }
 \usage{
-require(raster)
 data(CFC)
 }
 \format{ }
 \details{
-Annual mean of cloud fraction cover is used as a proxy of a number of potential clear-sky days at given location.
+Annual mean of cloud fraction cover is used as a proxy of a number of potential
+clear-sky days at given location.
 }
 \source{
 
@@ -22,9 +22,10 @@ Annual mean of cloud fraction cover is used as a proxy of a number of potential 
 
 }
 \examples{
-require(raster)
-data(CFC)
-str(CFC)
-
+if(require(raster))
+{
+  data(CFC)
+  str(CFC)
+}
 }
 \keyword{datasets}
