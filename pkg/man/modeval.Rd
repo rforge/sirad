@@ -41,7 +41,7 @@ List of 13 statistics:
 \item{AC}{Agreement Coefficient}
 }
 
-\references{}
+%\references{}
 
 \author{
 Jedrzej S. Bojanowski
