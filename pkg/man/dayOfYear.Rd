@@ -21,9 +21,9 @@ Date in class 'Date'.
 
 \value{
 Numeric number of day in a year. }
-\references{
 
-}
+%\references{}
+
 \author{
 Jedrzej S. Bojanowski
 }
