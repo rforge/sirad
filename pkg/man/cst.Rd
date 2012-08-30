@@ -39,9 +39,7 @@ Method used to estimate final value of the clear sky transmissivity from the val
 
 \value{
 Numeric. Clear sky transmissivity.}
-\references{
-
-}
+%\references{}
 \author{
 Jedrzej S. Bojanowski
 }
