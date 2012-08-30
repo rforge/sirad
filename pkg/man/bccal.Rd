@@ -41,11 +41,10 @@ Function estimates Bristow-Campbell model coefficient 'B' based on reference (e.
 Bristow, K.L., and G.S. Campbell. 1984. On the relationship between incoming solar radiation and daily maximum and minimum temperature. Agriculture and Forest Meteorology, 31:159-166.
 }
 \author{
-Jedrzej Bojanowski
+Jedrzej S. Bojanowski
 }
-\note{
 
-}
+%\note{}
 
 
 
@@ -62,5 +61,5 @@ rad_mea <- Metdata$meteo$RAD_MEA
 bccal(lat,days,rad_mea,tmax,tmin, tal=0.76)
 }
 
-\keyword{}
+%\keyword{}
 

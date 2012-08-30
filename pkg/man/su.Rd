@@ -48,7 +48,7 @@ Supit, I. 1994. Global radiation. Publication EUR 15745 EN of the Office for Off
 Supit, I., Kappel, R.R. van, 1998. A simple method to estimate global radiation. Solar Energy, 63:147-160. 
 }
 \author{
-Jedrzej Bojanowski
+Jedrzej S. Bojanowski
 }
 \note{
 'CC', 'Tmax', 'Tmin' can contain NA's, but length of vectors 'CC', 'Tmax', 'Tmin' and 'days' has to be the identical.
@@ -71,5 +71,5 @@ plot(zoo(su(days=days, lat=lat, A=0.07, B=0.54, C=-0.2, tmax=tmax, tmin=tmin, CC
 }
 
 
-\keyword{}
+%\keyword{}
 

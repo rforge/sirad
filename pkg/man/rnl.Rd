@@ -40,13 +40,10 @@ Vector of length n of daily net longwave radiation. [MJm-2d-1] }
 Allen, R.G., L.S. Pereira, D. Raes, and M. Smith. 1998. Crop Evapotranspiration: Guidelines for computing crop water requirements. Irrigation and Drainage Paper 56, Food and Agriculture Organization of the United Nations, Rome, pp. 300.
 }
 \author{
-Jedrzej Bojanowski
-}
-\note{
-
+Jedrzej S. Bojanowski
 }
 
-
+%\note{}
 
 \seealso{
 See 'ea', 'extrat' and 'cst' to calculate necessary input data.
@@ -55,5 +52,5 @@ See 'ea', 'extrat' and 'cst' to calculate necessary input data.
 rnl(Tmax=25.1,Tmin=19.1,sol_rad=14.5,vap_pres=2.1,extraT=23.5,tal=0.8)
 }
 
-\keyword{}
+%\keyword{}
 

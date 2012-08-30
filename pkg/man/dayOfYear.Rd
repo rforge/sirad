@@ -16,31 +16,26 @@ dayOfYear(dat)
 Date in class 'Date'.
 }
 }
-\details{
 
-}
+%\details{}
+
 \value{
 Numeric number of day in a year. }
 \references{
 
 }
 \author{
-Jedrzej Bojanowski
+Jedrzej S. Bojanowski
 }
-\note{
+%\note{}
 
-}
+%\seealso{}
 
-
-
-\seealso{
-
-}
 \examples{
 
 dayOfYear(as.Date("2009-01-11"))
 
 }
 
-\keyword{}
+%\keyword{}
 

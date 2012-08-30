@@ -40,13 +40,11 @@ Vector of length n of daily solar radiation [MJm-2].
 Hargreaves, G.H., Samini, Z.A.. 1892. Estimating potential evapotranspiration. J. Irrig. Darin. Eng., ASCE 108 (3), 225-230.
 }
 \author{
-Jedrzej Bojanowski
+Jedrzej S. Bojanowski
 }
 \note{
 'Tmax', 'Tmin' can contain NA's, but length of vectors 'Tmax', 'Tmin' and 'days' has to be the same.
 }
-
-
 
 \seealso{
 'hacal' to calibrate model using reference data, 'bc' to use Bristow-Campbell model to calculate solar radiation based on temperature range. 
@@ -61,5 +59,5 @@ lat <- Metdata$LATITUDE
 plot(zoo(ha(days=days, lat=lat, A=0.17, B=0, Tmax=tmax, Tmin=tmin),order.by=days))
 }
 
-\keyword{}
+%\keyword{}
 

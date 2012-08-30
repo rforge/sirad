@@ -35,13 +35,10 @@ Vector of length n of daily solar radiation [MJm-2].
 Mahmood, R., and K.G. Hubbard. 2002. Effect of time of temperature observation and estimation of daily solar radiation for the Northern Great Plains, USA. Agron. J., 94:723-733. 
 }
 \author{
-Jedrzej Bojanowski
-}
-\note{
-
+Jedrzej S. Bojanowski
 }
 
-
+%\note{}
 
 \seealso{
 'bc' and 'ha' to calculate solar radiation based on temperature range using different models.
@@ -57,5 +54,5 @@ plot(zoo(mh(days=days, lat=lat, Tmax=tmax, Tmin=tmin),order.by=days))
 
 }
 
-\keyword{}
+%\keyword{}
 

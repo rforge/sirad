@@ -28,20 +28,16 @@ Wind speed at standard 2 meters. [ms-1] }
 Allen, R.G., L.S. Pereira, D. Raes, and M. Smith. 1998. Crop Evapotranspiration: Guidelines for computing crop water requirements. Irrigation and Drainage Paper 56, Food and Agriculture Organization of the United Nations, Rome, pp. 300.
 }
 \author{
-Jedrzej Bojanowski
-}
-\note{
-
+Jedrzej S. Bojanowski
 }
 
+%\note{}
 
+%\seealso{}
 
-\seealso{
-
-}
 \examples{
 wind2(uz=5,meah=10)
 }
 
-\keyword{}
+%\keyword{}
 

@@ -22,29 +22,25 @@ Vector of length n containing daily minumum temperature [C].
 Altitude above the sea level [m].
 }
 }
-\details{
 
-}
+%\details{}
+
 \value{
 Psychrometric constant [kPaC-1] }
 \references{
 Allen, R.G., L.S. Pereira, D. Raes, and M. Smith. 1998. Crop Evapotranspiration: Guidelines for computing crop water requirements. Irrigation and Drainage Paper 56, Food and Agriculture Organization of the United Nations, Rome, pp. 300.
 }
 \author{
-Jedrzej Bojanowski
-}
-\note{
-
+Jedrzej S. Bojanowski
 }
 
+%\note{}
 
+%\seealso{}
 
-\seealso{
-
-}
 \examples{
 psychC(17,16,1800)
 }
 
-\keyword{}
+%\keyword{}
 

@@ -46,26 +46,24 @@ Required only if extraT=NA. Vector of class 'Date' of length n.
 Required only if extraT=NA. Latitude in decimal degrees.
 }
 }
-\details{
 
-}
+%\details{}
+
 \value{
 Vector of length n of daily reference evapotranspiration. [mmd-1] }
 \references{
 Allen, R.G., L.S. Pereira, D. Raes, and M. Smith. 1998. Crop Evapotranspiration: Guidelines for computing crop water requirements. Irrigation and Drainage Paper 56, Food and Agriculture Organization of the United Nations, Rome, pp. 300.
 }
 \author{
-Jedrzej Bojanowski
-}
-\note{
-
+Jedrzej S. Bojanowski
 }
 
+%\note{}
 
 
-\seealso{
 
-}
+%\seealso{}
+
 \examples{
 data(Metdata)
 tmax <- Metdata$meteo$TEMP_MAX
@@ -82,5 +80,5 @@ tal <- cst(rad_mea,dayOfYear(Metdata$meteo$DAY),radians(Metdata$LATITUDE))
 et0(Tmax=tmax,Tmin=tmin, vap_pres=vpres,sol_rad=rad_mea,tal=tal,z=Metdata$ALTITUDE,uz=wind,meah=10,extraT=NA,days=days,lat=lat)
 }
 
-\keyword{}
+%\keyword{}
 

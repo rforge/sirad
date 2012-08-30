@@ -40,19 +40,17 @@ List of 13 statistics:
 \item{MPE}{Mean Percentage Error}
 \item{AC}{Agreement Coefficient}
 }
-\references{
 
-}
+\references{}
+
 \author{
-Jedrzej Bojanowski
-}
-\note{
-
+Jedrzej S. Bojanowski
 }
 
-\seealso{
+%\note{}
 
-}
+%\seealso{}
+
 \examples{
 
 data(Metdata)
@@ -67,5 +65,5 @@ solrad_BC <- bc(days, lat, BCb=B, tmax, tmin, BCc=2, tal=0.76)
 modeval(solrad_BC,solrad_measured)
 }
 
-\keyword{}
+%\keyword{}
 

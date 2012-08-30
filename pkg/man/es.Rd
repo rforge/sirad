@@ -19,29 +19,25 @@ Vector of length n containing daily maximum temperature [C].
 Vector of length n containing daily minumum temperature [C].
 }
 }
-\details{
 
-}
+%\details{}
+
 \value{
 Vector of length n of mean saturation vapour pressure [kPa] }
 \references{
 Allen, R.G., L.S. Pereira, D. Raes, and M. Smith. 1998. Crop Evapotranspiration: Guidelines for computing crop water requirements. Irrigation and Drainage Paper 56, Food and Agriculture Organization of the United Nations, Rome, pp. 300.
 }
 \author{
-Jedrzej Bojanowski
-}
-\note{
-
+Jedrzej S. Bojanowski
 }
 
+%\note{}
 
+%\seealso{}
 
-\seealso{
-
-}
 \examples{
 es(Tmax=25.1,Tmin=19.1)
 }
 
-\keyword{}
+%\keyword{}
 

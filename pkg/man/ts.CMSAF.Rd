@@ -24,22 +24,20 @@ CM SAF delivers datasets in the NetCDF format. 'ts.CMSAF' allows to extract the 
 \value{
 A multivariate 'zoo' object.
 }
-\references{
-  
-}
+
+%\references{}
+
 \author{
-Jedrzej Bojanowski
-}
-\note{
-
+Jedrzej S. Bojanowski
 }
 
-\seealso{
+%\note{}
 
-}
+%\seealso{}
+
 \examples{
 \dontrun{plot(ts.CMSAF(files,latlon))}
 }
 
-\keyword{}
+%\keyword{}
 

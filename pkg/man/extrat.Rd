@@ -29,25 +29,21 @@ List of 3 elements:
 \item{DayLength}{day length in hours}
 
 }
-\references{
 
-}
+%\references{}
+
 \author{
-Jedrzej Bojanowski
-}
-\note{
-
+Jedrzej S. Bojanowski
 }
 
+%\note{}
 
+%\seealso{}
 
-\seealso{
-
-}
 \examples{
 ## extraterrestrial radiation and daylength for 1 January and latitude 55 degrees
 extrat(dayOfYear("2011-01-01"), radians(55))
 }
 
-\keyword{}
+%\keyword{}
 

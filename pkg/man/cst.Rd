@@ -34,26 +34,22 @@ Logical value. If 'TRUE' percent of days given by 'perce' of every single year a
 Method used to estimate final value of the clear sky transmissivity from the values derived from selected clear-sky days. Default is 'median' which is more conservative, while alternative 'max' is sensitive to outliers. If 'max' is used the value of 'perce' is not important. If 'stat' is numeric then (instead of 'median' or 'max') 'quantile' is used. 'Stat' is sent as quantile's 'probs' parameter. See ?quantile for details   
 }
 }
-\details{
 
-}
+%\details{}
+
 \value{
 Numeric. Clear sky transmissivity.}
 \references{
 
 }
 \author{
-Jedrzej Bojanowski
-}
-\note{
-
+Jedrzej S. Bojanowski
 }
 
+%\note{}
 
+%\seealso{}
 
-\seealso{
-
-}
 \examples{
 
 data(Metdata)
@@ -63,5 +59,5 @@ latr <- radians(Metdata$LATITUDE)
 cst(ref,i,latr) 
 }
 
-\keyword{}
+%\keyword{}
 

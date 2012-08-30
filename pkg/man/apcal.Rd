@@ -39,11 +39,10 @@ Prescott, J.A., 1940. Evaporation from a water surface in relation to solar radi
 }
 
 \author{
-Jedrzej Bojanowski
+Jedrzej S. Bojanowski
 }
-\note{
 
-}
+%\note{}
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
@@ -59,5 +58,6 @@ lat <- Metdata$LATITUDE
 rad_mea <- Metdata$meteo$RAD_MEA
 apcal(lat=lat,days=days,rad_mea,SSD=sunshine)
 }
-\keyword{}
+
+%\keyword{}
 

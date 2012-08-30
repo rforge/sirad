@@ -3,8 +3,8 @@ Type: Package
 Title: Functions for calculating daily solar radiation and evapotranspiration
 Version: 2.0-2
 Date: 2012-08-17
-Author: Jedrzej Bojanowski
-Maintainer: Jedrzej Bojanowski <jedrzej.bojanowski@gmail.com>
+Author: Jedrzej S. Bojanowski
+Maintainer: Jedrzej S. Bojanowski <jedrzej.bojanowski@gmail.com>
 Description: Package provides functions to calculate daily solar radiation at horizontal surface using several well-known models. It also includes functions for model calibration based on groud-truth data as well as a function for auto-calibration. The FAO Penmann-Monteith equation to calculate evapotranspiration is also included.
 URL: http://sirad.r-forge.r-project.org/, http://mars.jrc.ec.europa.eu/mars/Projects/Solar-Radiation-in-MCYFS, http://jbojanowski.pl 
 Depends: zoo, ncdf, RNetCDF, raster

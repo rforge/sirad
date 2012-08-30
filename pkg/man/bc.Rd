@@ -44,7 +44,7 @@ Vector of length n of daily solar radiation [MJm-2].
 Bristow, K.L., Campbell, G.S. 1984. On the relationship between incoming solar radiation and daily maximum and minimum temperature. Agriculture and Forest Meteorology, 31:159-166.
 }
 \author{
-Jedrzej Bojanowski
+Jedrzej S. Bojanowski
 }
 \note{
 'Tmax', 'Tmin' can contain NA's, but length of vectors 'Tmax', 'Tmin' and 'days' has to be the same.
@@ -64,5 +64,5 @@ lat <- Metdata$LATITUDE
 plot(zoo(bc(days, lat, BCb=B, tmax, tmin, BCc=2, tal=0.76),order.by=days))
 }
 
-\keyword{}
+%\keyword{}
 

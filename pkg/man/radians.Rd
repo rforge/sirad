@@ -15,23 +15,19 @@ radians(degrees)
 \item{degrees}{numeric}
 }
 
-\details{
+%\details{}
 
-}
 \value{
 Radians.
 }
-\references{
 
-}
+%\references{}
+
 \author{
-Jedrzej Bojanowski
-}
-\note{
-
+Jedrzej S. Bojanowski
 }
 
-
+%\note{}
 
 \seealso{
 'degrees'
@@ -40,5 +36,5 @@ Jedrzej Bojanowski
 radians(55)
 }
 
-\keyword{}
+%\keyword{}
 

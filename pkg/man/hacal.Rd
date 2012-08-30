@@ -39,7 +39,7 @@ Vector of length 3 containing:
 Hargreaves, G.H., Samini, Z.A. 1892. Estimating potential evapotranspiration. J. Irrig. Darin. Eng., ASCE 108 (3), 225-230.
 }
 \author{
-Jedrzej Bojanowski
+Jedrzej S. Bojanowski
 }
 
 \seealso{

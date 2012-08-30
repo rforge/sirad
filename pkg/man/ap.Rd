@@ -38,7 +38,7 @@ Angstrom, A., 1924. Solar and terrestrial radiation. Quarterly Journal of the Ro
 Prescott, J.A., 1940. Evaporation from a water surface in relation to solar radiation. Transactions of the Royal Society of South Australia, 64:114-118.  
 }
 \author{
-Jedrzej Bojanowski
+Jedrzej S. Bojanowski
 }
 \note{
 SSD input can contain NA's, but length of vectors 'SSD' and 'days' has to be the identical.
@@ -59,5 +59,5 @@ lat <- Metdata$LATITUDE
 plot(zoo(ap(days,lat,A,B,sunshine),order.by=days))
 }
 
-\keyword{}
+%\keyword{}
 

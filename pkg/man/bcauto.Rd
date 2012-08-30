@@ -53,11 +53,10 @@ The auto-calibration method bases on the assumption that on the clear-sky days m
 Bojanowski, J., Donatelli, M., 2012, Auto-calibration of the Bristow and Campbell solar radiation model, Environmental Modelling and Software. [in prep.]
 }
 \author{
-  Jedrzej Bojanowski
+  Jedrzej S. Bojanowski
 }
-\note{
 
-}
+%\note{}
 
 
 \seealso{
@@ -74,5 +73,5 @@ rad_mea <- Metdata$meteo$RAD_MEA
 dcoast <- Metdata$DCOAST
 bcauto(lat,lon,days,tmax,tmin,tal=0.76,BCb_guess=0.13,epsilon=0.5,perce=NA,dcoast)
 }
-\keyword{}
+%\keyword{}
 

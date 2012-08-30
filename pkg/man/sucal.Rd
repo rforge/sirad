@@ -46,11 +46,10 @@ Supit, I. 1994. Global radiation. Publication EUR 15745 EN of the Office for Off
 Supit, I., Kappel, R.R. van, 1998. A simple method to estimate global radiation. Solar Energy, 63:147-160. 
 }
 \author{
-Jedrzej Bojanowski
+Jedrzej S. Bojanowski
 }
-\note{
 
-}
+%\note{}
 
 
 
@@ -68,5 +67,5 @@ CC <- Metdata$meteo$CLOUD_DAYTIME_TOTAL
 sucal(lat=lat,days=days,rad_mea,tmax=tmax, tmin=tmin,cc=CC)
 }
 
-\keyword{}
+%\keyword{}
 

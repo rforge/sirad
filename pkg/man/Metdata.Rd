@@ -27,18 +27,15 @@ This dataset contains two years of daily data of sunshine hours, solar radiation
        }       
 
 }
-\details{
+%\details{}
 
-}
-\source{
+%\source{}
 
-}
-\references{
+%\references{}
 
-}
 \examples{
 data(Metdata)
 str(Metdata)
 
 }
-\keyword{datasets}
+%\keyword{datasets}

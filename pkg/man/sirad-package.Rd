@@ -19,19 +19,18 @@ LazyLoad: \tab yes\cr
 This package provides functions to calculate daily solar radiation at horizontal surface using several well-known models (Bristow&Campbell, Hargreaves, Supit-Van Kappel, Mahmood-Hubbard, Angrstrom-Prescott). It also includes functions for model calibration based on groud-truth data as well as a function for auto-calibration.
 }
 \author{
-Jedrzej Bojanowski
+Jedrzej S. Bojanowski
 
-Maintainer: Jedrzej Bojanowski <jedrzej.bojanowski@gmail.com>
-
-}
-\references{
+Maintainer: Jedrzej S. Bojanowski <jedrzej.bojanowski@gmail.com>
 
 }
+
+%\references{}
 
 \keyword{ package }
-\seealso{
 
-}
+%\seealso{}
+
 \examples{
 require(zoo)
 data(Metdata)

@@ -19,29 +19,25 @@ Vector of length n containing daily maximum temperature [C].
 Vector of length n containing daily minumum temperature [C].
 }
 }
-\details{
 
-}
+%\details{}
+
 \value{
 Slope of  saturation vapour pressure curve [kPaC-1] }
 \references{
 Allen, R.G., L.S. Pereira, D. Raes, and M. Smith. 1998. Crop Evapotranspiration: Guidelines for computing crop water requirements. Irrigation and Drainage Paper 56, Food and Agriculture Organization of the United Nations, Rome, pp. 300.
 }
 \author{
-Jedrzej Bojanowski
-}
-\note{
-
+Jedrzej S. Bojanowski
 }
 
+%\note{}
 
+%\seealso{}
 
-\seealso{
-
-}
 \examples{
 deltaVP(Tmax=17,Tmin=16)
 }
 
-\keyword{}
+%\keyword{}
 
