@@ -18,7 +18,7 @@ clear-sky days at given location.
 
 \source{EUMETSAT's Satellite Application Facility on Climate Monitoring}
 
-\references{Derrien, M., LeGléau, H., 2005. MSG/SEVIRI cloud mask and type from SAFNWC. International Journal of Remote Sensing, 26, 4707-4732.}
+\references{Derrien, M., LeGleau, H., 2005. MSG/SEVIRI cloud mask and type from SAFNWC. International Journal of Remote Sensing, 26, 4707-4732.}
 
 \examples{
 if(require(raster))
