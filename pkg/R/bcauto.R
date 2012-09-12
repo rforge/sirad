@@ -6,8 +6,8 @@ function (lat, lon, days, Tmax, Tmin, tal, BCb_guess = 0.13, epsilon = 0.5,
     require(raster)
     p <- extract(CFC, matrix(c(lon,lat),1,2))
     perce <- -68*log(p)+0.92*p+225
-    if (perce > 30) perce <- 30
-    if (perce < 0.5) perce <- 0.5
+    if (p < 24) perce <- 30
+    if (p > 71) perce <- 0.5
     if (is.na(perce)) { perce <- 1
     warning("Lat/lon outside the Cloud Fraction Cover map. Deault perce=1 is used")
     }
