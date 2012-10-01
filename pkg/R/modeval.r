@@ -34,7 +34,7 @@ modeval <- function (calculated, measured,stat=c("N","pearson","MBE","MAE","RMSE
         mmeasured)) * (abs(mcalculated - mmeasured) + 
         abs(calculated - mcalculated)))    
     b <- sqrt((sum((measured-mean(measured))^2))/(sum((calculated-mean(calculated))^2)))
-    if (cor(calculated,measured) < 0) b <- -b   
+    if (!is.na(cor(calculated,measured))  & cor(calculated,measured) < 0) b <- -b   
     a <-  mmeasured - b * mcalculated
     dY <- a + b*calculated 
     dX <- -a/b + (1/b)*measured   
