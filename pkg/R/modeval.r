@@ -1,9 +1,13 @@
-modeval <- function (calculated, measured,stat=c("N","pearson","MBE","MAE","RMSE","RRMSE","R2","slope","intercept","EF","SD","CRM","MPE","AC","ACu","ACs")) 
+modeval <- function (calculated, measured,stat=c("N","pearson","MBE","MAE","RMSE","RRMSE","R2","slope","intercept","EF","SD","CRM","MPE","AC","ACu","ACs"),minlength=3) 
 {
+    stopifnot(length(calculated)==length(measured), length(stat)!=0)
+    rval <- list()
+    for (st in stat) rval[[st]] <- NA 
     x <- na.omit(as.data.frame(cbind(calculated, measured)))
+    if (dim(x)[1]>minlength) {    
     calculated <- x[, 1]
     measured <- x[, 2]
-    rval <- c()
+
     if("N"%in%stat) rval$N <- nrow(x)
     
     dif <- calculated - measured
@@ -29,10 +33,9 @@ modeval <- function (calculated, measured,stat=c("N","pearson","MBE","MAE","RMSE
     if("CRM"%in%stat)rval$CRM <- (mean(measured - calculated, na.rm = T))/mmeasured
     if("MPE"%in%stat)rval$MPE <- mean(dif/measured, na.rm = T) * 100
     
-    if(TRUE%in%(c("AC","ACs","ACu")%in%stat)){SSD <- sum(sdif)
-    SPOD <- sum((abs(mcalculated - mmeasured) + abs(measured - 
-        mmeasured)) * (abs(mcalculated - mmeasured) + 
-        abs(calculated - mcalculated)))    
+    if(TRUE%in%(c("AC","ACs","ACu")%in%stat)){
+    SSD <- sum(sdif)
+    SPOD <- sum((abs(mcalculated - mmeasured) + abs(calculated - mcalculated)) * (abs(mcalculated - mmeasured) + abs(measured - mmeasured)))    
     b <- sqrt((sum((measured-mean(measured))^2))/(sum((calculated-mean(calculated))^2)))
     if (!is.na(cor(calculated,measured))  & cor(calculated,measured) < 0) b <- -b   
     a <-  mmeasured - b * mcalculated
@@ -43,7 +46,7 @@ modeval <- function (calculated, measured,stat=c("N","pearson","MBE","MAE","RMSE
     if("AC"%in%stat)rval$AC <- 1 - (SSD/SPOD)
     if("ACu"%in%stat)rval$ACu <- 1 - (SPDu/SPOD)
     if("ACs"%in%stat)rval$ACs <- 1 - (SPDs/SPOD)
-    
+    }
     rval
 }
 
