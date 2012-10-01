@@ -8,7 +8,7 @@ Estimators of the model performance.
 Function estimates several statistics comparing modelled and reference (measured) values.
 }
 \usage{
-modeval(calculated,measured)
+modeval(calculated,measured,stat=c("N","pearson","MBE","MAE","RMSE","RRMSE","R2","slope","intercept","EF","SD","CRM","MPE","AC","ACu","ACs"))
 }
 
 \arguments{
@@ -17,6 +17,9 @@ Vector of length n of the calculated (modelled) values.
 }
   \item{measured}{
 Vector of length n of the reference (measured) values.
+}
+  \item{stat}{
+Statistics which are going to be calculated. By default all possible.
 }
 
 }
@@ -39,9 +42,13 @@ List of 13 statistics:
 \item{CRM}{Coefficient of Residual Mass}
 \item{MPE}{Mean Percentage Error}
 \item{AC}{Agreement Coefficient}
+\item{ACu}{Unsystematic Agreement Coefficient}
+\item{ACs}{Systematic Agreement Coefficient}
 }
 
-%\references{}
+\references{
+Bellocchi, G., Acutis, M., Fila, G., Donatelli, M., 2002. An indicator of solar radiation model performance based on a fuzzy expert system. Agronomy Journal 94, 1222-1233. \cr
+Ji, L., Gallo, K., 2006. An Agreement Coefficient for image comparison. Photogrammetric Engineering & Remote Sensing 72(7), 823-833.}
 
 \author{
 Jedrzej S. Bojanowski
@@ -63,6 +70,7 @@ solrad_measured <- Metdata$meteo$RAD_MEA
 solrad_BC <- bc(days, lat, BCb=B, tmax, tmin, BCc=2, tal=0.76) 
 
 modeval(solrad_BC,solrad_measured)
+modeval(solrad_BC,solrad_measured,stat="EF")
 }
 
 %\keyword{}
