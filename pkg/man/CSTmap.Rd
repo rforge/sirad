@@ -8,7 +8,7 @@ Clear sky transmissivity map
 This dataset contains a raster of clear sky transmissivity 
 }
 \usage{
-data(CST)
+data(CSTmap)
 }
 %\format{ }
 \details{

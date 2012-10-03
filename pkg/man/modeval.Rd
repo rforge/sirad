@@ -8,7 +8,7 @@ Estimators of the model performance.
 Function estimates several statistics comparing modelled and reference (measured) values.
 }
 \usage{
-modeval(calculated,measured,stat=c("N","pearson","MBE","MAE","RMSE","RRMSE","R2","slope","intercept","EF","SD","CRM","MPE","AC","ACu","ACs"),minlenght=4)
+modeval(calculated,measured,stat=c("N","pearson","MBE","MAE","RMSE","RRMSE","R2","slope","intercept","EF","SD","CRM","MPE","AC","ACu","ACs"),minlength=4)
 }
 
 \arguments{
@@ -21,7 +21,7 @@ Vector of length n of the reference (measured) values.
   \item{stat}{
 Statistics which are going to be calculated. By default all possible.
 }
-  \item{minlenght}{
+  \item{minlength}{
 Minimum number of non-NA data pairs. If below this value, the NA's are produced.
 }
 

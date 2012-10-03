@@ -1,4 +1,4 @@
-modeval <- function (calculated, measured,stat=c("N","pearson","MBE","MAE","RMSE","RRMSE","R2","slope","intercept","EF","SD","CRM","MPE","AC","ACu","ACs"),minlength=3) 
+modeval <- function (calculated, measured,stat=c("N","pearson","MBE","MAE","RMSE","RRMSE","R2","slope","intercept","EF","SD","CRM","MPE","AC","ACu","ACs"),minlength=4) 
 {
     stopifnot(length(calculated)==length(measured), length(stat)!=0)
     rval <- list()
