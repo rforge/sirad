@@ -1,8 +1,9 @@
 apcal <-
 function(lat,days,rad_mea,SSD) {
         i <- dayOfYear(days)
-        DL <- extrat(lat=radians(lat),i)$DayLength   #[hours]
-        Sd <- extrat(lat=radians(lat),i)$ExtraTerrestrialSolarRadiationDaily  # [MJ]
+        ex <- extrat(lat=radians(lat),i)
+        DL <- ex$DayLength   #[hours]
+        Sd <- ex$ExtraTerrestrialSolarRadiationDaily  # [MJ]
         Y <- rad_mea/Sd      
         X <- SSD/DL
         m <- lm(Y ~ X)
