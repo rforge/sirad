@@ -73,7 +73,7 @@ days <- Metdata$meteo$DAY
 lat <- Metdata$LATITUDE
 rad_mea <- Metdata$meteo$RAD_MEA
 z <- Metdata$ALTITUDE
-wind <-  Metdata$meteo$WIND10
+wind <-  Metdata$meteo$WIND_10
 
 tal <- cst(rad_mea,dayOfYear(Metdata$meteo$DAY),radians(Metdata$LATITUDE)) 
 
