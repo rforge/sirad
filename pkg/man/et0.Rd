@@ -31,7 +31,7 @@ Clear sky transmissivity [0-1].
 Altitude above the sea level [m].
 }
   \item{uz}{
-Wind speed measured at heith 'z' [ms-1].
+Wind speed measured at heith 'meah' [ms-1].
 }
   \item{meah}{
 The height (above the ground level) of the wind speed measurement [m].
