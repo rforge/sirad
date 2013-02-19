@@ -1,4 +1,4 @@
-modeval <- function (calculated, measured,stat=c("N","pearson","MBE","MAE","RMSE","RRMSE","R2","slope","intercept","EF","SD","CRM","MPE","AC","ACu","ACs"),minlength=4) 
+modeval <- function (calculated, measured,stat=c("N","pearson","MBE","RMBE","MAE","RMAE","RMSE","RRMSE","R2","slope","intercept","EF","SD","CRM","MPE","AC","ACu","ACs"),minlength=4) 
 {
     stopifnot(length(calculated)==length(measured), length(stat)!=0)
     rval <- list()
@@ -19,7 +19,9 @@ modeval <- function (calculated, measured,stat=c("N","pearson","MBE","MAE","RMSE
     
     if("pearson"%in%stat) rval$pearson <- cor(calculated, measured)
     if("MBE"%in%stat) rval$MBE <- mdif
+    if("RMBE"%in%stat) rval$RMBE <- 100 * mdif/mmeasured    
     if("MAE"%in%stat) rval$MAE <- mean(abs(dif), na.rm = T)
+    if("RMAE"%in%stat) rval$RMAE <- 100 * mean(abs(dif), na.rm = T)/mmeasured 
     if("RMSE"%in%stat) rval$RMSE <- sqrt(msdif)
     if("RRMSE"%in%stat) rval$RRMSE <- 100 * sqrt(msdif)/mmeasured
     
