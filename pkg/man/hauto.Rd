@@ -55,6 +55,7 @@ Vector of length 3 containing:
 }
 \references{
 Hargreaves, G.H., Samani, Z.A. 1892. Estimating potential evapotranspiration. J. Irrig. Darin. Eng., ASCE 108 (3), 225-230.
+Bojanowski, J.S., Donatelli, M., Skidmore, A.K., Vrieling, A., 2013. An auto-calibration procedure for empirical solar radiation models Environmental Modelling and Software 49, 118-128.
 }
 \author{
 Jedrzej S. Bojanowski

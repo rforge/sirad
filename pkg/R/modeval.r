@@ -1,13 +1,13 @@
 modeval <- function (calculated, measured,stat=c("N","pearson","MBE","RMBE","MAE","RMAE","RMSE","RRMSE","R2","slope","intercept","EF","SD","CRM","MPE","AC","ACu","ACs"),minlength=4) 
 {
-    stopifnot(length(calculated)==length(measured), length(stat)!=0)
-    rval <- list()
-    for (st in stat) rval[[st]] <- NA 
-    x <- na.omit(as.data.frame(cbind(calculated, measured)))
-    if (dim(x)[1]>minlength) {    
+  stopifnot(length(calculated)==length(measured), length(stat)!=0)
+  rval <- list()
+  for (st in stat) rval[[st]] <- NA 
+  x <- na.omit(as.data.frame(cbind(calculated, measured)))
+  if (dim(x)[1]>minlength) {    
     calculated <- x[, 1]
     measured <- x[, 2]
-
+    
     if("N"%in%stat) rval$N <- nrow(x)
     
     dif <- calculated - measured
@@ -36,19 +36,19 @@ modeval <- function (calculated, measured,stat=c("N","pearson","MBE","RMBE","MAE
     if("MPE"%in%stat)rval$MPE <- mean(dif/measured, na.rm = T) * 100
     
     if(TRUE%in%(c("AC","ACs","ACu")%in%stat)){
-    SSD <- sum(sdif)
-    SPOD <- sum((abs(mcalculated - mmeasured) + abs(calculated - mcalculated)) * (abs(mcalculated - mmeasured) + abs(measured - mmeasured)))    
-    b <- sqrt((sum((measured-mean(measured))^2))/(sum((calculated-mean(calculated))^2)))
-    if (!is.na(cor(calculated,measured))  & cor(calculated,measured) < 0) b <- -b   
-    a <-  mmeasured - b * mcalculated
-    dY <- a + b*calculated 
-    dX <- -a/b + (1/b)*measured   
-    SPDu <- sum((abs(calculated-dX))*(abs(measured-dY)))
-    SPDs <- SSD-SPDu }
+      SSD <- sum(sdif)
+      SPOD <- sum((abs(mcalculated - mmeasured) + abs(calculated - mcalculated)) * (abs(mcalculated - mmeasured) + abs(measured - mmeasured)))    
+      b <- sqrt((sum((measured-mean(measured))^2))/(sum((calculated-mean(calculated))^2)))
+      if (!is.na(cor(calculated,measured))  & cor(calculated,measured) < 0) b <- -b   
+      a <-  mmeasured - b * mcalculated
+      dY <- a + b*calculated 
+      dX <- -a/b + (1/b)*measured   
+      SPDu <- sum((abs(calculated-dX))*(abs(measured-dY)))
+      SPDs <- SSD-SPDu }
     if("AC"%in%stat)rval$AC <- 1 - (SSD/SPOD)
     if("ACu"%in%stat)rval$ACu <- 1 - (SPDu/SPOD)
     if("ACs"%in%stat)rval$ACs <- 1 - (SPDs/SPOD)
-    }
-    rval
+  }
+  rval
 }
 
