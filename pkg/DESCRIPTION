@@ -5,7 +5,7 @@ Version: 2.1-1
 Date: 2014-08-06
 Author: Jedrzej S. Bojanowski
 Maintainer: Jedrzej S. Bojanowski <jedrzej.bojanowski@gmail.com>
-Description: Sirad package provides functions for calculating daily global solar radiation at horizontal surface using several well-known models (i.e. Angstrom-Prescott, Supit-Van Kappel, Hargreaves, Bristow and Campbell, and Mahmood-Hubbard). The package also includes functions for model calibration based on ground-truth data, as well as a function for model auto-calibration. The FAO Penmann-Monteith equation to calculate evapotranspiration is also included.
+Description: Sirad package provides functions for calculating daily global solar radiation at horizontal surface using several well-known models (i.e. Angstrom-Prescott, Supit-Van Kappel, Hargreaves, Bristow and Campbell, and Mahmood-Hubbard). The package includes functions for model calibration based on ground-truth data, as well as a function for model auto-calibration. The FAO Penmann-Monteith equation to calculate evapotranspiration is also included.
 URL: http://sirad.r-forge.r-project.org/, http://mars.jrc.ec.europa.eu/mars/Projects/Solar-Radiation-in-MCYFS, http://jbojanowski.pl 
 Imports: zoo, ncdf, raster
 License: GPL-2
