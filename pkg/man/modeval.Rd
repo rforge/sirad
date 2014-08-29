@@ -2,7 +2,7 @@
 \alias{modeval}
 
 \title{
-Estimators of the model performance.
+Model performance statistics.
 }
 \description{
 Function estimates several statistics comparing modelled and reference (measured) values.
