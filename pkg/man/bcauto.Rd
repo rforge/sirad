@@ -8,7 +8,8 @@ Auto-calibrate Bristow-Campbell model
 Function estimates Bristow-Campbell model coefficient 'B' based on auto-calibration procedure
 }
 \usage{
-bcauto(lat,lon,days,extraT=NULL,Tmax,Tmin,tal,BCc=2,BCb_guess=0.13,epsilon=0.5,perce=NA,dcoast=NA)
+bcauto(lat,lon,days,extraT=NULL,Tmax,Tmin,tal,BCc=2,
+BCb_guess=0.13,epsilon=0.5,perce=NA,dcoast=NA)
 }
 
 \arguments{
@@ -77,7 +78,8 @@ lat <- Metdata$LATITUDE
 lon <- Metdata$LONGITUDE
 rad_mea <- Metdata$meteo$RAD_MEA
 dcoast <- Metdata$DCOAST
-bcauto(lat,lon,days,extraT=NULL,tmax,tmin,tal=0.76,BCc=2,BCb_guess=0.13,epsilon=0.5,perce=NA,dcoast)
+
+bcauto(lat,lon,days,extraT=NULL,tmax,tmin,perce=NA,dcoast)
 }
 %\keyword{}
 

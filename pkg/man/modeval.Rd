@@ -8,7 +8,9 @@ Model performance statistics.
 Function estimates several statistics comparing modelled and reference (measured) values.
 }
 \usage{
-modeval(calculated,measured,stat=c("N","pearson","MBE","RMBE","MAE","RMAE","RMSE","RRMSE","R2","slope","intercept","EF","SD","CRM","MPE","AC","ACu","ACs"),minlength=4)
+modeval(calculated,measured,
+stat=c("N","pearson","MBE","RMBE","MAE","RMAE","RMSE","RRMSE","R2","slope",
+"intercept","EF","SD","CRM","MPE","AC","ACu","ACs"),minlength=4)
 }
 
 \arguments{

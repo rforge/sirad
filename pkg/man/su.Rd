@@ -70,7 +70,8 @@ tmin <- Metdata$meteo$TEMP_MIN
 cc <- Metdata$meteo$CLOUD_DAYTIME_TOTAL
 days <- Metdata$meteo$DAY
 lat <- Metdata$LATITUDE
-plot(zoo(su(days=days, lat=lat, extraT=NULL, A=0.07, B=0.54, C=-0.2, tmax=tmax, tmin=tmin, CC=cc),order.by=days))
+plot(zoo(su(days=days, lat=lat, extraT=NULL, A=0.07, B=0.54, 
+C=-0.2, tmax=tmax, tmin=tmin, CC=cc),order.by=days))
 }
 
 

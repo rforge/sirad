@@ -7,7 +7,8 @@ Auto-calibrate Hargreaves model
 Function estimates Hargreaves model coefficients 'A' and 'B' based on autocalibration procedure
 }
 \usage{
-hauto(lat, lon, days,extraT = NULL, Tmax, Tmin, tal, Ha_guess = 0.16, Hb_guess = 0.1, epsilon=0.5, perce = NA) 
+hauto(lat, lon, days,extraT = NULL, Tmax, Tmin, tal,
+Ha_guess = 0.16, Hb_guess = 0.1, epsilon=0.5, perce = NA) 
 }
 \arguments{
   \item{lat}{
@@ -71,7 +72,7 @@ Tmin <- Metdata$meteo$TEMP_MIN
 days <- Metdata$meteo$DAY
 lat <- Metdata$LATITUDE
 lon <- Metdata$LONGITUDE
-hauto(lat,lon,days,extraT=NULL,Tmax,Tmin,tal=0.76,Ha_guess=0.16,Hb_guess=0.1,epsilon=0.5,perce=NA)
+hauto(lat,lon,days,extraT=NULL,Tmax,Tmin,tal=0.76)
 }
 
 
