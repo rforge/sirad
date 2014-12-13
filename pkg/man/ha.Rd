@@ -8,7 +8,7 @@ Hargreaves solar radiation model
 'ha()' calculates daily solar radiation based on daily temperature range using Hargreaves model.
 }
 \usage{
-ha(days, lat, lon, extraT=NULL, A, B, Tmax, Tmin)
+ha(days, lat, lon, extraT=NULL, A=NA, B=NA, Tmax, Tmin)
 }
 \arguments{
   \item{days}{

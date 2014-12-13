@@ -1,5 +1,5 @@
 ha <-
-  function(days,lat,lon,extraT=NULL,A,B,Tmax,Tmin) {
+  function(days,lat,lon,extraT=NULL,A=NA,B=NA,Tmax,Tmin) {
     i <- dayOfYear(days)
     latt <- radians(lat)
     if (is.null(extraT)) extraT <- extrat(i=i,lat=latt)$ExtraTerrestrialSolarRadiationDaily

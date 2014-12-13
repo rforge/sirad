@@ -1,5 +1,5 @@
 su <-
-  function(days,lat,extraT=NULL,A,B,C,tmax,tmin,CC) {
+  function(days,lat,extraT=NULL,A=NA,B=NA,C=NA,tmax,tmin,CC) {
     i <- dayOfYear(days)
     latt <- radians(lat)
     if (is.null(extraT)) extraT <- extrat(i=i,lat=latt)$ExtraTerrestrialSolarRadiationDaily

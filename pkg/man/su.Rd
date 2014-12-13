@@ -8,7 +8,7 @@ Supit-Van Kappel solar radiation model
 'su()' calculates daily solar radiation based on daily cloud coverage and temperature range using Supit-Van Kappel model.
 }
 \usage{
-su(days, lat, extraT=NULL, A, B, C, tmax, tmin, CC)
+su(days, lat, extraT=NULL, A=NA, B=NA, C=NA, tmax, tmin, CC)
 }
 
 \arguments{

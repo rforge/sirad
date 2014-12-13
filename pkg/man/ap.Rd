@@ -8,7 +8,7 @@ Angstrom-Prescott solar radiation model
 Angstrom-Prescott model is used to calculate daily global irradiance for a horizontal surface based on sunshine duration.
 }
 \usage{
-ap(days, lat, lon, extraT=NULL, A, B, SSD)
+ap(days, lat, lon, extraT=NULL, A=NA, B=NA, SSD)
 }
 \arguments{
   \item{days}{
