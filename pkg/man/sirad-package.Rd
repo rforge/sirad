@@ -11,8 +11,8 @@ Package provides functions to calculate daily solar radiation at horizontal surf
 \tabular{ll}{
 Package: \tab sirad\cr
 Type: \tab Package\cr
-Version: \tab 2.1-1\cr
-Date: \tab 2014-08-06\cr
+Version: \tab 2.2-1\cr
+Date: \tab 2014-12-13\cr
 License: \tab GPL-2\cr
 LazyLoad: \tab yes\cr
 }
@@ -39,5 +39,6 @@ B <- 0.57
 sunshine <- Metdata$meteo$SUNSHINE
 days <- Metdata$meteo$DAY
 lat <- Metdata$LATITUDE
-plot(zoo(ap(days=days,lat=lat,extraT=NULL, A=A,B=B,SSD=sunshine),order.by=days))
+lon <- Metdata$LONGITUDE
+plot(zoo(ap(days=days,lat=lat,lon=lon,extraT=NULL, A=A,B=B,SSD=sunshine),order.by=days))
 }
