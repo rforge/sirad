@@ -41,7 +41,9 @@ Vector of length n of daily solar radiation [MJm-2].
 }
 \references{
 Bojanowski, J.S., Vrieling, A., Skidmore, A.K., 2013. Calibration of solar radiation models for Europe using Meteosat Second Generation and weather station data. Agricultural and Forest Meteorology 176:1-9.
-Angstrom, A., 1924. Solar and terrestrial radiation. Quarterly Journal of the Royal Meteorological Society, 50:121-125. \cr
+\cr
+Angstrom, A., 1924. Solar and terrestrial radiation. Quarterly Journal of the Royal Meteorological Society, 50:121-125. 
+\cr
 Prescott, J.A., 1940. Evaporation from a water surface in relation to solar radiation. Transactions of the Royal Society of South Australia, 64:114-118.  
 }
 \author{

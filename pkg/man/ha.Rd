@@ -44,6 +44,7 @@ Vector of length n of daily solar radiation [MJm-2].
 }
 \references{
 Bojanowski, J.S., Vrieling, A., Skidmore, A.K., 2013. Calibration of solar radiation models for Europe using Meteosat Second Generation and weather station data. Agricultural and Forest Meteorology 176:1-9.
+\cr
 Hargreaves, G.H., Samini, Z.A.. 1892. Estimating potential evapotranspiration. J. Irrig. Darin. Eng., ASCE 108 (3), 225-230.
 }
 \author{

@@ -1,8 +1,13 @@
 su <-
-  function(days,lat,extraT=NULL,A=NA,B=NA,C=NA,tmax,tmin,CC) {
+  function(days,lat,lon,extraT=NULL,A=NA,B=NA,C=NA,tmax,tmin,CC) {
     i <- dayOfYear(days)
     latt <- radians(lat)
     if (is.null(extraT)) extraT <- extrat(i=i,lat=latt)$ExtraTerrestrialSolarRadiationDaily
+    
+    if (is.na(A)) A <- extract(Sa_map, matrix(c(lon,lat),1,2))
+    if (is.na(B)) B <- extract(Sb_map, matrix(c(lon,lat),1,2))
+    if (is.na(C)) C <- extract(Sc_map, matrix(c(lon,lat),1,2))
+    
     su <- extraT*(A*sqrt(tmax-tmin)+B*sqrt(1-CC/8)) + C
     su 
   }
