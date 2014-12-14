@@ -20,10 +20,8 @@ Map of Angstrom-Prescott model coefficient was derived from Meteosat Second Gene
 \references{Bojanowski, J.S., Vrieling, A., Skidmore, A.K., 2013. Calibration of solar radiation models for Europe using Meteosat Second Generation and weather station data. Agricultural and Forest Meteorology 176:1-9}
 
 \examples{
-if(require(raster))
-{
-  data(APa_map)
-  show(APa_map)
-}
+require(raster)
+show(APa_map)
+plot(APa_map)
 }
 \keyword{datasets}

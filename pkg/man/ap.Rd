@@ -59,7 +59,6 @@ SSD input can contain NA's, but length of vectors 'SSD' and 'days' has to be the
 \examples{
 
 require(zoo)
-data(Metdata)
 #A <- 0.21
 #B <- 0.57
 sunshine <- Metdata$meteo$SUNSHINE
