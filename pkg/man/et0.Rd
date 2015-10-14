@@ -8,7 +8,7 @@ FAO Penman-Monteith evapotranspiration equation
 'et0' estimates evapotranspiration based on FAO Penman-Monteith equation
 }
 \usage{
-et0(Tmax,Tmin, vap_pres,sol_rad,tal,z,uz,meah=10,extraT,days=NA,lat=NA)
+et0(Tmax,Tmin, vap_pres,sol_rad,tal,z,uz,meah=10,extraT=NA,days=NA,lat=NA)
 }
 
 \arguments{
@@ -37,7 +37,7 @@ Wind speed measured at heith 'meah' [ms-1].
 The height (above the ground level) of the wind speed measurement [m].
 }
   \item{extraT}{
-Optional. Vector of length n of extraterrestrial solar radiation [MJm-2d-1]. If 'NULL' then it is calculated by the function. Providing extraterrestrial solar radiation speeds up the computation. 
+Optional. Vector of length n of extraterrestrial solar radiation [MJm-2d-1]. If 'NA' then it is calculated by the function. Providing extraterrestrial solar radiation speeds up the computation. 
 }
   \item{days}{
 Required only if extraT=NA. Vector of class 'Date' of length n.

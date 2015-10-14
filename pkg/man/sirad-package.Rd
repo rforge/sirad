@@ -11,8 +11,8 @@ Package provides functions to calculate daily solar radiation at horizontal surf
 \tabular{ll}{
 Package: \tab sirad\cr
 Type: \tab Package\cr
-Version: \tab 2.2-2\cr
-Date: \tab 2014-12-14\cr
+Version: \tab 2.2-3\cr
+Date: \tab 2015-10-14\cr
 License: \tab GPL-2\cr
 LazyLoad: \tab yes\cr
 }
