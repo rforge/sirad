@@ -8,7 +8,7 @@ bcauto <-
       if (p < 24) perce <- 30
       if (p > 71) perce <- 0.5
       if (is.na(perce)) { perce <- 1
-                          warning("Lat/lon outside the Cloud Fraction Cover map. Deault perce=1 is used")
+                          warning("Lat/lon outside the Cloud Fraction Cover map. Default perce=1 is used")
       }
     }
     Tmax <- Tmax[order(days)]
