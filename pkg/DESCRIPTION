@@ -1,8 +1,8 @@
 Package: sirad
 Type: Package
 Title: Functions for Calculating Daily Solar Radiation and Evapotranspiration
-Version: 2.3-1
-Date: 2015-12-12
+Version: 2.3-2
+Date: 2016-09-06
 Author: Jedrzej S. Bojanowski
 Maintainer: Jedrzej S. Bojanowski <jedrzej.bojanowski@gmail.com>
 Description: Calculating daily global solar radiation at horizontal surface using several well-known models (i.e. Angstrom-Prescott, Supit-Van Kappel, Hargreaves, Bristow and Campbell, and Mahmood-Hubbard), and model calibration based on ground-truth data, and (3) model auto-calibration. The FAO Penmann-Monteith equation to calculate evapotranspiration is also included.
