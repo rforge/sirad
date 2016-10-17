@@ -13,7 +13,7 @@ exd <-
         sdi <- sum(ss[ss>0])
         Sd <- c(Sd,sdi) }                                                                                           
     }   
-    
+    Sd[Sd<0] <- 0
     Sd  #[MJ]
   }
 

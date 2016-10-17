@@ -11,8 +11,8 @@ Calculates daily solar radiation at horizontal surface using several well-known 
 \tabular{ll}{
 Package: \tab sirad\cr
 Type: \tab Package\cr
-Version: \tab 2.3-2\cr
-Date: \tab 2016-09-06\cr
+Version: \tab 2.3-3\cr
+Date: \tab 2016-10-17\cr
 License: \tab GPL-2\cr
 LazyLoad: \tab yes\cr
 }
